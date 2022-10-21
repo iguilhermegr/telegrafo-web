@@ -1,0 +1,13 @@
+section#box {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+section#box p#code-morse {
+    margin: 0;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    font-size: larger;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+}
