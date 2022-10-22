@@ -1,6 +1,7 @@
 # <p align="center"> Teclado Morse Web 💻</p> 
 
-### <div align="center"><code> Um teclado morse desenvolvido para web (um convert string) para a<br>Feira de Ciências do Curso de ADS que faço em 2022 </code></div>
+### <div align="center"><code> Um teclado morse desenvolvido para web (um convert string) para a </code></div>
+### <div align="center"><code> Feira de Ciências do Curso de ADS que faço em 2022 </code></div>
 ### <div align="center"><code> Converte em tempo real os caracteres inseridos do teclado em morse (português) </code></div>
  
 
