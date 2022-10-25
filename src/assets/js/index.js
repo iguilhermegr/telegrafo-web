@@ -1,4 +1,5 @@
-const morses =     {
+// Dados locais de caracteres em morse
+const morses = {
     "a": ".-",
     "b": "-...",
     "c": "-.-.",
@@ -72,6 +73,7 @@ const morses =     {
     " ": "",
 }
 
+// Conversão em tempo real dos caracteres do teclado para morse
 function convert () {
     let textarea = document.getElementById('code-morse')
 
@@ -80,11 +82,10 @@ function convert () {
         document.getElementById("code-morse-result").innerHTML = text.split("").map(a => a.replace(a, morses[a])).join(" ")
     }
     textarea.addEventListener('input', (e) => {
-            if(morses[e.data]) cMorse()
+        if(morses[e.data]) cMorse()
     })
-
 }
-
+// Deixando uma escuta para preparar o carregamento da conversão do morse em tempo real
 function load() {
     let oneTime = document.getElementById("box");
     oneTime.addEventListener("click", convert(), false);
