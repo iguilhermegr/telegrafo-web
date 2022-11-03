@@ -132,15 +132,15 @@ const morses = {
 
 // Conversão em tempo real dos caracteres do teclado para morse
 function convert () {
-    let textarea = document.getElementById('code-morse')
 
-    function cMorse() {
-        let text = document.getElementById("code-morse").value
-        document.getElementById("code-morse-result").innerHTML = text.split("").map(a => a.replace(a, morses[a])).join(" ").replace(/undefined/g, " ")
-    }
-    textarea.addEventListener('input', (e) => {
-        if(morses[e.data]) cMorse()
-    })
+    (function cMorse() {
+        document.addEventListener ('keypress', (event) => {
+            let text = event.key
+            document.getElementById("code-morse").innerHTML = text.split("").map(x => x.replace(a, morses[x])).join(" ").replace(/undefined/g, " ")
+            
+        })
+        
+    })()
 }
 // Deixando uma escuta para preparar o carregamento da conversão do morse em tempo real
 function load() {
