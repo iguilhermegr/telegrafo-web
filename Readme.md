@@ -1,4 +1,4 @@
-# <p align="center"> Teclado Morse Web 💻</p> 
+# <p align="center"> Teclado Morse Web (Telégrafo Web) 💻</p> 
 
 ### <div align="center"><code> Um teclado morse desenvolvido para web (um convert string) para a </code></div>
 ### <div align="center"><code> Feira de Ciências do Curso de ADS que faço em 2022 </code></div>
