@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(16, 17, 29);
+}
+
 p {
     writing-mode: horizontal-tb !important;
     font-size: 20px;
