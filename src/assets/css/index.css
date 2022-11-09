@@ -64,11 +64,13 @@ a {
 }
 
 p {
+    background-color: #303245;
     writing-mode: horizontal-tb !important;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-rendering: auto;
-    color: fieldtext;
+    font-size: 30px;
+    color: white;
     letter-spacing: normal;
     word-spacing: normal;
     line-height: normal;
@@ -78,19 +80,21 @@ p {
     text-align: center;
     -webkit-rtl-ordering: logical;
     cursor: text;
-    background-color: field;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
     content: none;
     display: inline-block;
+    height: 100%;
+    outline: 0;
+    width: 100%;
 }
 
 ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
+}
+
+table {
+    align-items: center;
 }
 
 mark {
@@ -110,6 +114,7 @@ abbr[title], dfn[title] {
 }
 
 table {
+    display: flex;
     border-collapse:collapse;
     border-spacing:0;
 }
