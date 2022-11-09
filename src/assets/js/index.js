@@ -132,15 +132,14 @@ const morses = {
 
 // Conversão em tempo real dos caracteres do teclado para morse
 function convert () {
-    let textarea = document.getElementById('box')
+    let textarea = document.getElementById('code-morse')
 
     function cMorse() {
-        window.addEventListener('keypress', (e) => {
-            let text = e.key
-            document.getElementById("code-morse-result").innerHTML = text.split("").map(a => a.replace(a, morses[a])).join(" ").replace(/undefined/g, " ")
-        })
+        let text = document.getElementById("code-morse").value
+        document.getElementById("code-morse-result").innerHTML = text.split("").map(a => a.replace(a, morses[a])).join(" ").replace(/undefined/g, " ")
+        console.log(text)
     }
-    textarea.addEventListener('click', (e) => {
+    textarea.addEventListener('input', (e) => {
         if(morses[e.data]) cMorse()
     })
 }
@@ -148,4 +147,15 @@ function convert () {
 function load() {
     let oneTime = document.getElementById("box");
     oneTime.addEventListener("click", convert(), false);
+}
+
+function del() {
+    document.getElementById("code-morse-result") = ""
+}
+
+function instantDel() {
+    let button = document.getElementById("delete");
+    button.addEventListener("keypress", (e) => {
+        if(e.key === 'backspace') {}
+    })
 }
