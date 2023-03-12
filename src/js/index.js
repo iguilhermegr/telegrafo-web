@@ -1,5 +1,6 @@
-// Dados locais de caracteres em morse
-const morses = {
+const seconds = 30;
+
+const morseCodes = {
     "a": ".-",
     "A": ".-",
     "b": "-...",
@@ -130,32 +131,21 @@ const morses = {
     " ": "",
 }
 
-// Conversão em tempo real dos caracteres do teclado para morse
-function convert () {
-    let textarea = document.getElementById('code-morse')
+// Write Javascript code!
+window.addEventListener('keydown', (e) => {
+  const code = morseCodes[e.key];
+  const inputTexts = e.key
 
-    function cMorse() {
-        let text = document.getElementById("code-morse").value
-        document.getElementById("code-morse-result").innerHTML = text.split("").map(a => a.replace(a, morses[a])).join(" ").replace(/undefined/g, " ")
-        console.log(text)
-    }
-    textarea.addEventListener('input', (e) => {
-        if(morses[e.data]) cMorse()
-    })
-}
-// Deixando uma escuta para preparar o carregamento da conversão do morse em tempo real
-function load() {
-    let oneTime = document.getElementById("box");
-    oneTime.addEventListener("click", convert(), false);
-}
+  const button = document.querySelector('button');
+  console.log(inputTexts)
 
-function del() {
-    document.getElementById("code-morse-result") = ""
-}
+  if (code) {
+    const span = document.createElement('span');
 
-function instantDel() {
-    let button = document.getElementById("delete");
-    button.addEventListener("keypress", (e) => {
-        if(e.key === 'backspace') {}
-    })
-}
+    span.innerText = code;
+
+    document.querySelector('p').append(span);
+
+    setTimeout(() => span.remove(), seconds * 1000);
+  }
+});
