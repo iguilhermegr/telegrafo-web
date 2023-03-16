@@ -12,8 +12,8 @@
 <table align="center">
 	<tr>
 		<td>
-            <a href="https://github.com/GR-sh/teclado-morse-web/graphs/contributors">
-              <img src="https://contrib.rocks/image?repo=GR-sh/teclado-morse-web" />
+            <a href="https://github.com/guidsribeiro/telegrafo-web/graphs/contributors">
+              <img src="https://contrib.rocks/image?repo=guidsribeiro/telegrafo-web" />
             </a>
         </td>
 	</tr>
