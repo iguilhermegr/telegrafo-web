@@ -5,7 +5,7 @@
 ### <div align="center"><code> Converte em tempo real os caracteres inseridos do teclado em morse (português) </code></div>
  
 <div align="center">
-    <b><a href="https://telegrafo-web.ceepcianorte.repl.co/">Site onde o Projeto é Carregado!</a></b>
+    <b><a href="https://guidsribeiro.github.io/telegrafo-web/">Site onde o Projeto é Carregado!</a></b>
 </div>
  
 
