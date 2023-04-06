@@ -1,4 +1,4 @@
-const seconds = 30;
+const seconds = 45;
 
 const morseCodes = {
     "a": ".-",
@@ -128,7 +128,7 @@ const morseCodes = {
     "ñ": "--.--",
     "Ñ": "--.--",
     "Ç": "-.-..",
-    " ": "",
+    " ": " / ",
 }
 
 // Write Javascript code!
