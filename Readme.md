@@ -5,7 +5,7 @@
 ### <div align="center"><code> Converte em tempo real os caracteres inseridos do teclado em morse (português) </code></div>
  
 <div align="center">
-    <b><a href="https://guidsribeiro.github.io/telegrafo-web/">Site onde o Projeto é Carregado!</a></b>
+    <b><a href="https://iguilhermegr.github.io/telegrafo-web/">Site onde o Projeto é Carregado!</a></b>
 </div>
  
 
@@ -16,8 +16,8 @@
 <table align="center">
 	<tr>
 		<td>
-            <a href="https://github.com/guidsribeiro/telegrafo-web/graphs/contributors">
-              <img src="https://contrib.rocks/image?repo=guidsribeiro/telegrafo-web" />
+            <a href="https://github.com/iguilhermegr/telegrafo-web/graphs/contributors">
+              <img src="https://contrib.rocks/image?repo=iguilhermegr/telegrafo-web" />
             </a>
         </td>
 	</tr>
